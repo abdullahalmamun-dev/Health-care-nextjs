@@ -8,7 +8,7 @@ import Footer from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'HealthCare Plus - Professional Medical Services',
+  title: 'CareWave - Professional Medical Services',
   description: 'Your trusted partner in healthcare, providing professional medical services with a patient-first approach.',
 };
 

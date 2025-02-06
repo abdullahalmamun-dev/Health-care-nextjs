@@ -21,9 +21,9 @@ const Navigation = () => {
   ];
 
   return (
-    <header className="px-10 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="max-w-7xl mx-auto px-5 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container h-20 items-center justify-around">
-        <div className="flex gap-6 md:gap-10 justify-between pt-5">
+        <div className="flex gap-6 md:gap-10 justify-between pt-7">
           <Link href="/" className="flex items-between space-x-2">
             <Image className="w-10" width={100} height={100} alt="CareWave" src={logo}></Image>
             <span className="text-2xl font-bold">HealthCare Plus</span>

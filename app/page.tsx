@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center">
         <Image
@@ -22,7 +22,7 @@ export default function Home() {
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
             Experience exceptional healthcare with our team of dedicated professionals.
-            We're committed to your well-being and providing personalized care.
+            We&apos;re committed to your well-being and providing personalized care.
           </p>
           <div className="flex gap-4 justify-center">
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">

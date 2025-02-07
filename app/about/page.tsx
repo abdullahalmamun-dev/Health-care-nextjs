@@ -14,8 +14,8 @@ export default function About() {
           className="object-cover brightness-50"
           priority
         />
-        <div className="container relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+        <div className="container relative z-10 text-center text-white md:mx-0 px-5">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">About Us</h1>
           <p className="text-lg max-w-2xl mx-auto">
             Learn about our mission, values, and commitment to providing exceptional healthcare services.
           </p>
@@ -23,7 +23,7 @@ export default function About() {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-16">
+      <section className="md:mx-0 mx-5 py-5 md:py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -58,16 +58,16 @@ export default function About() {
       </section>
 
       {/* Story Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="md:mx-0 mx-5 py-5 md:py-16 bg-gray-50">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Our Story</h2>
-            <p className="text-lg text-muted-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">Our Story</h2>
+            <p className="text-md text-justify md:px-0 px-2 text-muted-foreground mb-4">
               Founded in 2010, HealthCare Plus has been at the forefront of medical excellence, 
               providing comprehensive healthcare services to our community. Our journey began with 
               a simple mission: to make quality healthcare accessible to everyone.
             </p>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-md text-justify md:px-0 px-2 text-muted-foreground">
               Today, we continue to grow and evolve, embracing new technologies and medical 
               advancements while maintaining our commitment to personalized, patient-centered care. 
               Our team of dedicated healthcare professionals works tirelessly to ensure that every 

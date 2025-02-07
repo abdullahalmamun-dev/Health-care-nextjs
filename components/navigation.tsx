@@ -27,17 +27,17 @@ const Navigation = () => {
   };
 
   return (
-    <header className="max-w-7xl mx-auto px-5 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="bg-blue-600 max-w-7xl mx-auto px-5 sticky top-0 z-50 w-full border-b  backdrop-blur">
       <div className="container h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image className="w-10" width={100} height={100} alt="CareWave" src={logo} />
-          <span className="text-2xl font-bold">HealthCare Plus</span>
+          <span className="tracking-wide text-2xl text-white font-bold">HealthCare Plus</span>
         </Link>
 
         {/* Hamburger Menu Icon (Mobile) */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-700 focus:outline-none hover:text-gray-900 transition-colors"
+          className="md:hidden text-white focus:outline-none hover:text-gray-900 transition-colors"
           aria-label="Menu"
         >
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -55,12 +55,13 @@ const Navigation = () => {
               key={link.href}
               href={link.href}
               className={cn(
-                "transition-colors hover:text-foreground/80 block px-4 py-2 md:inline-block",
-                pathname === link.href ? "text-black" : "text-foreground/60"
+                "transition-colors font-bold hover:text-foreground/100 block px-4 py-2 md:inline-block",
+                pathname === link.href ? "text-black" : "text-blue-600"
               )}
               onClick={() => setIsMenuOpen(false)} // Close menu after click
             >
               {link.label}
+              <hr />
             </Link>
           ))}
         </nav>

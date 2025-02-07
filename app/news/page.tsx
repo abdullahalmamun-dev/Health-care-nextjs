@@ -8,7 +8,7 @@ export default function News() {
   return (
     <div className="flex flex-col max-w-7xl mx-auto">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center">
+      <section className="relative h-[300px] md:h-[400px] flex items-center justify-center">
         <Image
           src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80"
           alt="Medical news"
@@ -17,17 +17,17 @@ export default function News() {
           priority
         />
         <div className="container relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Health News & Updates</h1>
-          <p className="text-lg max-w-2xl mx-auto">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4">Health News & Updates</h1>
+          <p className=" md:text-lg max-w-2xl mx-auto">
             Stay informed about the latest healthcare news, medical breakthroughs, and wellness tips.
           </p>
         </div>
       </section>
 
       {/* Featured News */}
-      <section className="py-16">
+      <section className="py-5 md:py-16">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {[
               {
                 image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
@@ -58,7 +58,7 @@ export default function News() {
                     <span className="text-sm text-muted-foreground">{news.date}</span>
                     <span className="text-sm text-blue-600">{news.category}</span>
                   </div>
-                  <h2 className="text-2xl font-bold mb-2">{news.title}</h2>
+                  <h2 className="text-xl md:text-2xl font-bold mb-2">{news.title}</h2>
                   <p className="text-muted-foreground mb-4">{news.excerpt}</p>
                   <Button asChild variant="link" className="p-0">
                     <Link href={`/news/${index + 1}`} className="flex items-center gap-2">
@@ -70,7 +70,7 @@ export default function News() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-5">
             {[
               {
                 image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80",
@@ -144,14 +144,14 @@ export default function News() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="md:py-16 py-5 bg-gray-50">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Stay Updated</h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <h2 className="md:text-3xl text-xl font-bold mb-4">Stay Updated</h2>
+            <p className="text-md md:text-lg text-muted-foreground mb-8 mx-5">
               Subscribe to our newsletter for the latest health news, tips, and updates.
             </p>
-            <form className="flex gap-4">
+            <form className="flex gap-4 md:mx-0 mx-5">
               <input
                 type="email"
                 placeholder="Enter your email"

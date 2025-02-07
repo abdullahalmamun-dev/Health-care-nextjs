@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col max-w-7xl mx-auto">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center">
+      <section className="relative md:h-[400px] h-[300px] flex items-center justify-center">
         <Image
           src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&q=80"
           alt="Contact us"
@@ -42,17 +42,17 @@ export default function Contact() {
           priority
         />
         <div className="container relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-lg max-w-2xl mx-auto">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4">Contact Us</h1>
+          <p className="md:text-lg text-md md:mx-0 mx-5 max-w-2xl">
             Get in touch with our team for appointments, inquiries, or emergency care.
           </p>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="py-16">
+      <section className="md:py-16 py-5">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="md:mx-0 mx-5 grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {[
               {
                 icon: MapPin,
@@ -84,10 +84,10 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="md:mx-0 mx-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+              <h2 className="md:text-3xl text-xl font-bold mb-6">Get in Touch</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
@@ -135,7 +135,7 @@ export default function Contact() {
 
             {/* Hours of Operation */}
             <div>
-              <h2 className="text-3xl font-bold mb-6">Hours of Operation</h2>
+              <h2 className="md:text-3xl text-xl font-bold mb-6">Hours of Operation</h2>
               <Card className="border-none shadow-lg">
                 <CardContent className="pt-6">
                   <div className="rounded-full bg-blue-100 w-12 h-12 flex items-center justify-center mb-4">

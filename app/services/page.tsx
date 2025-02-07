@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div className="flex flex-col max-w-7xl mx-auto">
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center">
+      <section className="relative h-[350px] md:h-[400px] flex items-center justify-center">
         <Image
           src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80"
           alt="Medical services"
@@ -15,17 +15,17 @@ export default function Services() {
           priority
         />
         <div className="container relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-          <p className="text-lg max-w-2xl mx-auto">
+          <h1 className="text-2xl md:text-5xl font-bold mb-4">Our Services</h1>
+          <p className="text-md md:px-0 px-5 max-w-2xl mx-auto">
             Comprehensive healthcare services tailored to meet your needs with excellence and care.
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-16">
+      <section className="py-5 md:py-16">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className=" md:mx-0 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: Heart,
@@ -73,11 +73,11 @@ export default function Services() {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-5 md:py-16 bg-gray-50">
         <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Process</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-5 md:mb-12">Our Process</h2>
+          <div className=" max-w-4xl mx-auto">
+            <div className="space-y-8 md:mx-0 mx-5">
               {[
                 {
                   step: "01",
@@ -101,7 +101,7 @@ export default function Services() {
                 }
               ].map((process, index) => (
                 <div key={index} className="flex gap-6">
-                  <div className="text-3xl font-bold text-blue-600">{process.step}</div>
+                  <div className="text-2xl md:text-3xl font-bold text-blue-600">{process.step}</div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{process.title}</h3>
                     <p className="text-muted-foreground">{process.description}</p>

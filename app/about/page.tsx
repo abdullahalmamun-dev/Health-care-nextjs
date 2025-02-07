@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function About() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
         <Image

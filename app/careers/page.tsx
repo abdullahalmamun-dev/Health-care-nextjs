@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Careers() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
         <Image
@@ -20,6 +20,7 @@ export default function Careers() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Join Our Team</h1>
           <p className="text-lg max-w-2xl mx-auto">
             Build your career with us and make a difference in healthcare.
+            Explore opportunities that shape the future of patient care.
           </p>
         </div>
       </section>
@@ -30,30 +31,31 @@ export default function Careers() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Join HealthCare Plus?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We offer a supportive environment where you can grow your career while making a real difference in people's lives.
+              We offer a supportive, inclusive environment where you can grow your career while making a real difference in people&apos;s lives.
+              Discover how you can thrive with us!
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
+            {[ 
               {
                 icon: Heart,
                 title: "Meaningful Work",
-                description: "Make a real difference in patients' lives through compassionate care."
+                description: "Make a lasting impact by providing compassionate, patient-centered care that improves lives every day."
               },
               {
                 icon: Users,
-                title: "Great Team",
-                description: "Work with passionate professionals in a collaborative environment."
+                title: "Collaborative Team",
+                description: "Join a community of healthcare professionals who support and learn from one another in a team-driven atmosphere."
               },
               {
                 icon: Award,
                 title: "Growth Opportunities",
-                description: "Continuous learning and career advancement possibilities."
+                description: "We believe in fostering career development. Our programs offer mentorship, training, and leadership development."
               },
               {
                 icon: Briefcase,
                 title: "Excellent Benefits",
-                description: "Comprehensive benefits package and competitive compensation."
+                description: "Enjoy a comprehensive benefits package including health insurance, retirement plans, and generous paid time off."
               }
             ].map((benefit, index) => (
               <Card key={index} className="border-none shadow-lg">
@@ -74,37 +76,45 @@ export default function Careers() {
       <section className="py-16 bg-gray-50">
         <div className="container">
           <h2 className="text-3xl font-bold mb-12">Current Openings</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            We’re always looking for talented individuals who are passionate about providing excellent patient care. Explore our open positions below.
+          </p>
           <div className="grid gap-6">
-            {[
+            {[ 
               {
                 title: "Senior Medical Doctor",
                 department: "Primary Care",
                 location: "Medical City",
-                type: "Full-time"
+                type: "Full-time",
+                description: "Provide expert medical care in a fast-paced environment, offering compassionate support to patients and their families."
               },
               {
                 title: "Registered Nurse",
                 department: "Emergency Care",
                 location: "Medical City",
-                type: "Full-time"
+                type: "Full-time",
+                description: "Join a high-energy emergency department, providing direct care to patients in critical need with speed and professionalism."
               },
               {
                 title: "Medical Technologist",
                 department: "Laboratory",
                 location: "Medical City",
-                type: "Full-time"
+                type: "Full-time",
+                description: "Work with cutting-edge technology and diagnostic equipment to provide accurate and timely test results for patient care."
               },
               {
                 title: "Healthcare Administrator",
                 department: "Administration",
                 location: "Medical City",
-                type: "Full-time"
+                type: "Full-time",
+                description: "Oversee the operations and management of healthcare services to ensure smooth workflow and efficient patient care delivery."
               }
             ].map((job, index) => (
               <Card key={index} className="border-none shadow-lg">
                 <CardContent className="flex items-center justify-between p-6">
                   <div>
                     <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
+                    <p className="text-sm text-muted-foreground mb-2">{job.description}</p>
                     <div className="flex gap-4 text-sm text-muted-foreground">
                       <span>{job.department}</span>
                       <span>•</span>
@@ -131,11 +141,11 @@ export default function Careers() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Employee Stories</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Hear from our team members about their experience working at HealthCare Plus.
+              Hear from our team members about their experience working at HealthCare Plus. Their stories reflect our values of teamwork, respect, and growth.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
+            {[ 
               {
                 name: "Dr. James Wilson",
                 role: "Senior Physician",
@@ -185,11 +195,11 @@ export default function Careers() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Benefits</h2>
             <p className="text-lg max-w-2xl mx-auto">
-              We offer comprehensive benefits to support our employees' well-being and growth.
+              We offer comprehensive benefits to support our employees&apos; well-being and growth. HealthCare Plus ensures our employees feel valued, supported, and empowered.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
+            {[ 
               "Competitive Salary",
               "Health Insurance",
               "Retirement Plans",
@@ -199,8 +209,6 @@ export default function Careers() {
               "Career Growth",
               "Team Events"
             ].map((benefit, index) => (
-              <div key={index} className="bg-white/10 rounded-lg p-4 text-center">
-                <span className="text-lg">{benefit}</span> ].map((benefit, index) => (
               <div key={index} className="bg-white/10 rounded-lg p-4 text-center">
                 <span className="text-lg">{benefit}</span>
               </div>
@@ -214,7 +222,7 @@ export default function Careers() {
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Join Our Team?</h2>
           <p className="mb-8 text-lg max-w-2xl mx-auto">
-            Take the first step towards a rewarding career in healthcare.
+            Take the first step towards a rewarding career in healthcare. Explore our opportunities and start your journey with HealthCare Plus.
           </p>
           <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
             <Link href="/careers/apply">View All Positions</Link>

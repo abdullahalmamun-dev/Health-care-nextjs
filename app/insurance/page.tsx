@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Insurance() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col max-w-7xl mx-auto">
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center">
         <Image

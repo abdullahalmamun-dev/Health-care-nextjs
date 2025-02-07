@@ -17,10 +17,10 @@ export default function Home() {
           priority
         />
         <div className="container relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-2xl md:text-6xl font-bold mb-6">
             Your Health, Our Priority
           </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-md md:text-xl mb-8 px-5 md:max-w-2xl mx-auto">
             Experience exceptional healthcare with our team of dedicated professionals.
             We&apos;re committed to your well-being and providing personalized care.
           </p>
@@ -38,8 +38,8 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
         <div className="container">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-5 md:mb-12">Why Choose Us</h2>
+          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: HeartPulse,
@@ -77,15 +77,15 @@ export default function Home() {
       </section>
 
       {/* Featured Services */}
-      <section className="py-16">
+      <section className="py-5 md:py-16">
         <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Medical Services</h2>
+          <div className="text-center mb-5 md:mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Medical Services</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We offer a comprehensive range of medical services to meet all your healthcare needs.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80",
@@ -149,12 +149,12 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Patient Testimonials</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Patient Testimonials</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Read what our patients say about their experience with us.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 name: "Sarah Johnson",
@@ -200,10 +200,10 @@ export default function Home() {
       </section>
 
       {/* Latest News Preview */}
-      <section className="py-16">
+      <section className="mx-5 md:mx-0 py-5 md:py-16">
         <div className="container">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold">Latest Health News</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">Latest Health News</h2>
             <Button asChild variant="outline">
               <Link href="/news" className="flex items-center gap-2">
                 View All News <ChevronRight className="w-4 h-4" />
@@ -257,10 +257,10 @@ export default function Home() {
       </section>
 
       {/* Insurance Partners */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-5 md:py-16 bg-gray-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Insurance Partners</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Insurance Partners</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We work with major insurance providers to ensure accessible healthcare for all.
             </p>
@@ -284,9 +284,9 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-10 md:py-16 bg-blue-600 text-white">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="mb-8 text-lg max-w-2xl mx-auto">
             Schedule your appointment today and take the first step towards better health.
           </p>

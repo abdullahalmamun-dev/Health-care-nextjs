@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="max-w-7xl mx-auto border-t bg-background/95">
-      <div className="container py-8 md:py-12">
+    <footer className=" max-w-7xl mx-auto border-t bg-background/95">
+      <div className="container py-8 md:py-12 px-5 md:mx-0">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div>
             <Link href="/" className="flex items-center space-x-2">

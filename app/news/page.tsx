@@ -27,7 +27,7 @@ export default function News() {
       {/* Featured News */}
       <section className="py-5 md:py-16">
         <div className="container">
-          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="mx-5 md:mx-10 grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {[
               {
                 image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80",
@@ -53,7 +53,7 @@ export default function News() {
                     className="object-cover"
                   />
                 </div>
-                <CardContent className="pt-6">
+                <CardContent className="pt-6 md:mx-10">
                   <div className="flex items-center gap-4 mb-2">
                     <span className="text-sm text-muted-foreground">{news.date}</span>
                     <span className="text-sm text-blue-600">{news.category}</span>

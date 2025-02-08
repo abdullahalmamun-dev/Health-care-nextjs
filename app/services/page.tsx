@@ -25,7 +25,7 @@ export default function Services() {
       {/* Services Grid */}
       <section className="py-5 md:py-16">
         <div className="container">
-          <div className=" md:mx-0 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className=" md:mx-10 mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
                 icon: Heart,

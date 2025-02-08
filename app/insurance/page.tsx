@@ -33,7 +33,7 @@ export default function Insurance() {
               We accept most major insurance plans to ensure you receive the care you need.
             </p>
           </div>
-          <div className="md:mx-0 mx-5 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="md:mx-10 mx-5 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 name: "Blue Cross Blue Shield",
@@ -96,7 +96,7 @@ export default function Insurance() {
               We offer flexible payment options to make healthcare accessible to everyone.
             </p>
           </div>
-          <div className="md:mx-0 mx-5 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="md:mx-10 mx-5 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "Insurance Coverage",

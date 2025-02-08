@@ -30,7 +30,7 @@ const Navigation = () => {
     <header className="bg-blue-600 max-w-7xl mx-auto px-5 sticky top-0 z-50 w-full border-b  backdrop-blur">
       <div className="container h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Image className="w-10" width={100} height={100} alt="CareWave" src={logo} />
+          <Image className="w-16" width={500} height={500} alt="CareWave" src={logo} />
           <span className="tracking-wide text-2xl text-white font-bold">HealthCare Plus</span>
         </Link>
 
@@ -56,7 +56,7 @@ const Navigation = () => {
               href={link.href}
               className={cn(
                 "transition-colors font-bold hover:text-foreground/100 block px-4 py-2 md:inline-block",
-                pathname === link.href ? "text-black" : "text-blue-600"
+                pathname === link.href ? "text-black" : "md:text-white text-blue-600"
               )}
               onClick={() => setIsMenuOpen(false)} // Close menu after click
             >

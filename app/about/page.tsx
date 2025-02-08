@@ -23,7 +23,7 @@ export default function About() {
       </section>
 
       {/* Mission & Values */}
-      <section className="md:mx-0 mx-5 py-5 md:py-16">
+      <section className="md:mx-10 mx-5 py-5 md:py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[

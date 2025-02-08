@@ -39,7 +39,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-5 md:mb-12">Why Choose Us</h2>
-          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="mx-5 md:mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 icon: HeartPulse,
@@ -85,7 +85,7 @@ export default function Home() {
               We offer a comprehensive range of medical services to meet all your healthcare needs.
             </p>
           </div>
-          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mx-5 md:mx-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80",
@@ -154,7 +154,7 @@ export default function Home() {
               Read what our patients say about their experience with us.
             </p>
           </div>
-          <div className="mx-5 md:mx-0 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mx-5 md:mx-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 name: "Sarah Johnson",
@@ -200,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* Latest News Preview */}
-      <section className="mx-5 md:mx-0 py-5 md:py-16">
+      <section className="mx-5 md:mx-10 py-5 md:py-16">
         <div className="container">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold">Latest Health News</h2>

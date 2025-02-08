@@ -43,7 +43,7 @@ export default function Contact() {
         />
         <div className="container relative z-10 text-center text-white">
           <h1 className="text-2xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="md:text-lg text-md md:mx-0 mx-5 max-w-2xl">
+          <p className="md:text-lg text-md md:text-center md:mx-0 mx-5 ">
             Get in touch with our team for appointments, inquiries, or emergency care.
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function Contact() {
       {/* Contact Information */}
       <section className="md:py-16 py-5">
         <div className="container">
-          <div className="md:mx-0 mx-5 grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="md:mx-10 mx-5 grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {[
               {
                 icon: MapPin,
@@ -84,7 +84,7 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="md:mx-0 mx-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="md:mx-10 mx-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form */}
             <div>
               <h2 className="md:text-3xl text-xl font-bold mb-6">Get in Touch</h2>
